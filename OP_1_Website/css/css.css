@@ -1,0 +1,562 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: white;
+    font-family: 'Segoe UI';
+}
+div.container_12 {
+    background-color: white;
+    margin-top: -10px;
+}
+.mdblogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+/*sidebar*/
+.sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  color: #012340;
+  display: block;
+    transition: 0.5s;
+}
+.sidenav a:hover {
+  color: #036AC2;
+}
+.main {
+  margin-left: 150px;
+  padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+img.michielaanhetwerk {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.about {
+    display: block;
+    background-color: #012340;
+    height: 60px;
+    padding: 1px;
+    margin-bottom: 20px;
+    margin-top: 270px;
+        
+}
+img.profilepicture {
+    display: block;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.wieismdb {
+    display: block;
+    height: 250px;
+    width: 560px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #012340;
+    padding-top: 10px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #012340
+}
+div.blok {
+    display: block;
+    background-color: #012340;
+    height: 60px;
+    padding: 1px;
+    margin-bottom: 20px;
+}
+p.test {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+img.logovideo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.subfeiten {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+* {box-sizing:border-box}
+
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 680px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -20px;
+  color: #012340;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #012340;
+  color: white;
+}
+
+/* GIP Tom Illustraties */
+.prevgiptomillu, .nextgiptomillu {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -40px;
+  color: #012340;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.nextgiptomillu {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevgiptomillu:hover, .nextgiptomillu:hover {
+  background-color: #012340;
+  color: white;
+}
+/* Muur */
+.prevmuur, .nextmuur {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -110px;
+  color: #012340;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.nextmuur {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevmuur:hover, .nextmuur:hover {
+  background-color: #012340;
+  color: white;
+}
+/* A-monument */
+.prevamon, .nextamon {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -45px;
+  color: #012340;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.nextamon {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevamon:hover, .nextamon:hover {
+  background-color: #012340;
+  color: white;
+}
+
+/* Pad Der Geluiden */
+.prevpdg, .nextpdg {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #012340;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.nextpdg {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevpdg:hover, .nextpdg:hover {
+  background-color: #012340;
+  color: white;
+}
+
+/* GIP Tom */
+.prevgiptom, .nextgiptom {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -40px;
+  color: #012340;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.nextgiptom {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevgiptom:hover, .nextgiptom:hover {
+  background-color: #012340;
+  color: white;
+}
+
+/* B-Nice Fotografie */
+.prevb-nicefoto, .nextb-nicefoto {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -130px;
+  color: #012340;
+  background-color: #CCCCCC;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.nextb-nicefoto {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevb-nicefoto:hover, .nextb-nicefoto:hover {
+  background-color: #012340;
+  color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif, Bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertextblue {
+  color: #012340;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 2px;
+  margin-top: 20px;
+  background-color: rgba(1, 35, 65, 0.62);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #012340;
+  transition: 2s;
+    transform: rotateY(180deg);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+iframe.youtube {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+p.subtextvideo {
+    text-align: center;
+    width: 560px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #012340;
+    color: #012340;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+p.subtextbnice {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #012340;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    width: 560px;
+}
+div.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+p.MDB {
+    display: block;
+    font-size: 50px;
+    color: #0459D9;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+p.subtextMDB {
+    display: block;
+    font-size: 33px;
+    color: #0459D9;
+    margin-top: -70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.illuleft {
+    display: block;
+    margin-right: auto;
+}
+img.illuright {
+    display: block;
+    margin-left: auto;
+}
+img.illurightvulk {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+img.imgbnice {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 680px;
+}
+div.contactform {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: #012340;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    width: 560px;
+}
+p.contactinfo {
+    color: #012340;
+}
+button.tumblrbnice {
+    background-color: white;
+    color: #34526f;
+    border: 2px solid;
+    border-color: #34526f;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+    transition: 0.5s;
+    margin-top: 10px;
+    position: static;
+}
+button.tumblrbnice:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    background-color: #34526f;
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+}
+button.facebook {
+    background-color: white;
+    color: #3b5998;
+    border: 2px solid;
+    border-color: #3b5998;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+    transition: 0.5s;
+}
+button.facebook:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    background-color: #3b5998;
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+    
+}
+button.youtube {
+    background-color: white;
+    color: #ED3833;
+    border: 2px solid;
+    border-color: #ED3833;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+    transition: 0.5s;
+}
+button.youtube:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    background-color: #ED3833;
+    color: white;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+}
+button.cv {
+    background-color: #008AFF;
+    color: white;
+    border: 2px solid;
+    border-color: #CCCCCC;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+button.cv:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    background-color: white;
+    color: #008AFF;
+    border: 2px solid;
+    border-color: #CCCCCC;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI';
+    padding: 5px 10px 5px 10px;
+}
